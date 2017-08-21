@@ -5,18 +5,18 @@ $( document ).ready(function(){
   //
   $('#randomNumber').text(Random);
   // Appending random number to the randomNumber id in the html doc
-  //
+  // Tried at least lol
+  // I wanted to for loop but I could not get it to work :(
   var num1= Math.floor(Math.random()*11+1)
   var num2= Math.floor(Math.random()*11+1)
   var num3= Math.floor(Math.random()*11+1)
   var num4= Math.floor(Math.random()*11+1)
-  // Setting up random numbers for each jewel
+  // Sets up random numbers for each jewel
   // Random number has to be between 1 - 12
-  // 
   var userTotal= 0; 
   var wins= 0;
   var losses = 0;
-  //  Decaring variables for tallies
+  //  Declaring variables for tallies
 $('#numberWins').text(wins);
 $('#numberLosses').text(losses);
 //resets the game
@@ -73,7 +73,7 @@ alert ("You lose!");
     userTotal = userTotal + num3;
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').text(userTotal);
-//sets win/lose conditions
+//sets wins/losses conditions
           if (userTotal == Random){
           yay();
         }
